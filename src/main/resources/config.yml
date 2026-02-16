@@ -1,0 +1,45 @@
+# Ollama Bridge Configuration
+
+# API Settings
+api:
+  # REST API URL
+  url: "http://localhost:8000"
+
+  # WebSocket URL (optional, for real-time features)
+  websocket-url: "ws://localhost:8000/ws"
+
+  # Use WebSocket for real-time communication
+  use-websocket: false
+
+# Broadcast Settings
+broadcast:
+  # Broadcast player join events to Discord
+  player-join: true
+
+  # Broadcast player quit events to Discord
+  player-quit: true
+
+  # Broadcast chat messages to Discord
+  chat-messages: false
+
+# AI Settings
+ai:
+  # Use conversation memory (context-aware responses)
+  use-memory: true
+
+  # Maximum response length in chat
+  max-response-length: 200
+
+  # Timeout for API requests (seconds)
+  timeout: 180
+
+# Message Formatting
+formatting:
+  # Prefix for AI responses
+  ai-prefix: "§b🤖 AI§f: "
+
+  # Error message prefix
+  error-prefix: "§c❌ "
+
+  # Success message prefix
+  success-prefix: "§a✓ "

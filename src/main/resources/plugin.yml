@@ -1,0 +1,25 @@
+name: OllamaBridge
+version: '1.0.0'
+main: com.woxloi.ollamabridge.OllamaBridgePlugin
+api-version: 1.19
+author: woxloi
+description: Bridge between Minecraft and Ollama AI Bot
+
+commands:
+  ollama:
+    description: Ollama AI main command
+    usage: /ollama
+    permission: ollamabridge.use
+
+permissions:
+  ollamabridge.use:
+    description: AI機能を使用できる
+    default: true
+
+  ollamabridge.broadcast:
+    description: Discordへのブロードキャスト権限
+    default: op
+
+  ollamabridge.admin:
+    description: 管理者権限
+    default: op
