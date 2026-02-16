@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="OllamaBridge:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OllamaBridge_jar</output-path>
+    <root id="archive" name="OllamaBridge.jar">
+      <element id="module-output" name="OllamaBridge" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

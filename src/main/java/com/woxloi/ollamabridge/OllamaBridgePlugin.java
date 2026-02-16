@@ -39,9 +39,7 @@ public class OllamaBridgePlugin extends JavaPlugin {
 
         // Register commands
         commandHandler = new CommandHandler(this, apiClient);
-        getCommand("ai").setExecutor(commandHandler);
-        getCommand("aimemory").setExecutor(commandHandler);
-        getCommand("aibroadcast").setExecutor(commandHandler);
+        getCommand("ollama").setExecutor(commandHandler);
 
         getLogger().info("Ollama Bridge Plugin enabled!");
         getLogger().info("API URL: " + apiUrl);
