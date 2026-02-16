@@ -58,7 +58,7 @@ public class CommandHandler implements CommandExecutor, TabCompleter {
             Player player = (Player) sender;
             String message = String.join(" ", Arrays.copyOfRange(args, 1, args.length));
 
-            player.sendMessage(ChatColor.GRAY + "🤖 AIに質問中...");
+            player.sendMessage(ChatColor.GRAY + "🤖 AIに質問中... (質問内容: " + message + ")");
 
             plugin.sendAiChat(player, message, new OllamaBridgePlugin.ChatCallback() {
 
